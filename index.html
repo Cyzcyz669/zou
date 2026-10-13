@@ -1,0 +1,20 @@
+<!doctype html><html lang="zh-Hans"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>《走》· 謝時臣《風雨歸村圖》</title><link rel="icon" href="data:,"><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><h1>《走》</h1><span id="sub"></span><span class="sp"></span>
+<button id="btnHH" role="switch" aria-checked="false" data-testid="huohua" aria-label="原画 / 活画"><span class="a">原画</span><span class="b">活画</span></button><button id="btnRead" data-testid="read">读一读</button><button id="btnOrig" data-testid="original-open">原图</button><button id="btnMute" aria-pressed="false">声音</button></header>
+<main id="main">
+ <div id="stage"><canvas id="cv"></canvas><canvas id="hh" aria-hidden="true" hidden></canvas><div id="hhHint" role="status" hidden></div><nav id="bar" aria-label="位置条"></nav><div id="hooks" aria-hidden="true"></div>
+  <div id="card" hidden></div><div id="hint" hidden></div></div>
+ <section id="guide"><p id="guideText"></p><p id="guideHint" hidden></p>
+  <div id="ending" hidden><p id="endLine"></p><canvas id="album" width="1600" height="1000"></canvas>
+   <div class="row"><button id="btnRead2">读一读</button><button id="btnSave" data-testid="save">存图</button><button id="btnAgain" data-testid="replay">再走一遍</button><button id="btnAgainHH" data-testid="replay-huohua">用活画再走一遍</button></div></div></section>
+ <section id="panel" hidden><div class="ph"><b id="panelTitle"></b><button id="btnClose">关闭</button></div>
+  <div id="pRead" class="pb"></div>
+  <div id="pOrig" class="pb" data-testid="original"><p class="on">原图 1:1：一个图像像素对应一个屏幕像素，未经任何裁切、滤镜或叠加。左右滑动查看全卷。</p><div id="oScroll"><div id="oInner"></div></div></div></section>
+</main>
+<footer id="hon" data-testid="label"><p id="hon1"><span id="honShort"></span> · <button id="btnHon" data-testid="label-details">详情</button></p></footer>
+<div id="toast" role="status" hidden></div>
+<script src="config.js"></script><script src="content.js"></script><script src="audio/zou-audio.js"></script><script src="app.js"></script><script src="huohua.js"></script>
+</body></html>
